@@ -1,0 +1,7 @@
+<odoo>
+    <data>
+        <menuitem id="menu_customer_claro" name="Claro" sequence="2" 
+            web_icon="claro_app12,static/description/icon.png"
+        />
+    </data>
+</odoo>

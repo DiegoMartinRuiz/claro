@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+        <record id="claro_report_activacion_tree" model="ir.ui.view">
+            <field name="name">report.activaciones.tree</field>
+            <field name="model">report.activaciones</field>
+            <field name="arch" type="xml">
+              <tree string="Claro Reportes Activaciones">
+                <field name="name" />
+                <field name="cuentas" />
+              </tree>
+            </field>
+          </record>
+        
+
+        <record id="action_report_activacion" model="ir.actions.act_window">
+            <field name="name">Claro Reporte de Activaciones</field>
+            <field name="res_model">report.activaciones</field>
+            <field name="view_mode">list</field>
+        </record>
+        <menuitem action="action_report_activacion" id="menu_action_claro_activacion_report" 
+            parent="menu_customer_claro" name="Claro Reporteria Activaciones" sequence="3" />
+    </data>
+</odoo>

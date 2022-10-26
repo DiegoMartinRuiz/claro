@@ -1,0 +1,41 @@
+<odoo>
+    <data>
+        <!-- Menu creado -->
+        <record id="claro_gsm_tree" model="ir.ui.view">
+            <field name="name">claro.gsm.tree</field>
+            <field name="model">claro.gsm</field>
+            <field name="arch" type="xml">
+                <tree string="Lineas Canceladas">
+                    <field name="id_terminal" />
+                    <field name="estado_id" />
+                    <field name="imei" />
+                    <field name="descripcion" />
+                    <field name="f_activa" />
+                </tree>
+            </field>
+        </record>
+        <record id="claro_gsm_form" model="ir.ui.view">
+            <field name="name">claro.gsm.tree</field>
+            <field name="model">claro.gsm</field>
+            <field name="arch" type="xml">
+                <form string="Claro Venta de Equipos">
+                    <sheet>
+                        <group>
+                            <field name="id_terminal" />
+                            <field name="estado_id" />
+                            <field name="imei" />
+                            <field name="descripcion" />
+                            <field name="f_activa" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="action_claro_gsm" model="ir.actions.act_window">
+            <field name="name">Terminales GSM</field>
+            <field name="res_model">claro.gsm</field>
+            <field name="view_mode">list,form</field>
+        </record>
+        <menuitem action="action_claro_gsm" id="menu_action_claro_gsm" parent="menu_customer_claro" name="Claro Terminales GSM" sequence="5" />
+    </data>
+</odoo>

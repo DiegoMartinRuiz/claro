@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+acces_claro_gsm,claro.gsm_user,model_claro_gsm,base.group_user,1,1,1,1
+acces_claro_activacion,claro.activacion_user,model_claro_activacion,base.group_user,1,1,1,1
+acces_claro_lineascanceladas,claro.lineascanceladas_user,model_claro_lineascanceladas,base.group_user,1,1,1,1
+acces_claro_pagossds,claro.pagossds_user,model_claro_pagossds,base.group_user,1,1,1,1
+acces_claro_solicitudes_sds,claro.solicitudes_sds_user,model_claro_solicitudes_sds,base.group_user,1,1,1,1
+acces_claro_solicitudes,claro.solicitudes_user,model_claro_solicitudes,base.group_user,1,1,1,1
+acces_claro_vtequipos,claro.vtequipos_user,model_claro_vtequipos,base.group_user,1,1,1,1
